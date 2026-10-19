@@ -1,0 +1,151 @@
+/* ===================================================
+   ESTILOS DE LA WEB
+   Cada bloque dice: "a este elemento, aplícale esto".
+   =================================================== */
+
+/* Variables: colores que se reutilizan. Cambia aquí y cambia en toda la web */
+:root {
+  --color-fondo: #f7f5f2;      /* fondo general, blanco roto */
+  --color-texto: #1f2933;      /* texto principal, casi negro */
+  --color-suave: #5f6b76;      /* texto secundario, gris */
+  --color-acento: #0f6e8c;     /* azul mar: botones y detalles */
+  --color-tarjeta: #ffffff;    /* fondo de las secciones */
+}
+
+/* Quita márgenes raros que ponen los navegadores por defecto */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo base de toda la página */
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.6;            /* espacio entre líneas, más fácil de leer */
+}
+
+/* ===== CABECERA ===== */
+.hero {
+  background: var(--color-acento);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+  margin: 8px 0;
+}
+
+.etiqueta {
+  text-transform: uppercase;   /* pone el texto en mayúsculas */
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  opacity: 0.85;
+}
+
+.subtitulo {
+  font-size: 1.2rem;
+  margin-bottom: 24px;
+}
+
+.boton {
+  display: inline-block;
+  background: white;
+  color: var(--color-acento);
+  padding: 10px 24px;
+  border-radius: 999px;        /* bordes totalmente redondos */
+  text-decoration: none;       /* quita el subrayado del enlace */
+  font-weight: bold;
+}
+
+.boton:hover {                 /* :hover = cuando pasas el ratón por encima */
+  opacity: 0.9;
+}
+
+/* ===== CONTENIDO PRINCIPAL ===== */
+main {
+  max-width: 720px;            /* el texto no se estira demasiado en pantallas grandes */
+  margin: 0 auto;              /* lo centra */
+  padding: 40px 20px;
+}
+
+section {
+  background: var(--color-tarjeta);
+  padding: 28px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);   /* sombra muy suave */
+}
+
+h2 {
+  color: var(--color-acento);
+  margin-bottom: 12px;
+  font-size: 1.3rem;
+}
+
+section p + p {                /* separa un párrafo del siguiente */
+  margin-top: 12px;
+}
+
+/* ===== LÍNEA DEL TIEMPO ===== */
+.linea-tiempo {
+  list-style: none;            /* quita los puntos de la lista */
+  border-left: 3px solid var(--color-acento);
+  padding-left: 20px;
+}
+
+.linea-tiempo li {
+  margin-bottom: 16px;
+}
+
+.fecha {
+  font-weight: bold;
+  color: var(--color-suave);
+  font-size: 0.9rem;
+}
+
+/* ===== PASTILLAS DE TECNOLOGÍAS ===== */
+.etiquetas {
+  display: flex;               /* pone los elementos en fila */
+  flex-wrap: wrap;             /* si no caben, saltan a la línea siguiente */
+  gap: 10px;
+}
+
+.etiquetas span {
+  background: var(--color-fondo);
+  border: 1px solid var(--color-acento);
+  color: var(--color-acento);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+
+/* ===== ENLACES ===== */
+a {
+  color: var(--color-acento);
+}
+
+/* ===== PIE ===== */
+footer {
+  text-align: center;
+  padding: 24px;
+  color: var(--color-suave);
+  font-size: 0.85rem;
+}
+
+/* ===== MÓVIL: se aplica solo en pantallas estrechas ===== */
+@media (max-width: 600px) {
+  .hero {
+    padding: 56px 16px;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  section {
+    padding: 20px;
+  }
+}

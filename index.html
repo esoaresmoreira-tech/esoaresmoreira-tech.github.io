@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!-- Esto le dice al navegador que es una página HTML moderna -->
+<html lang="es">
+
+<head>
+  <!-- La "cabeza" no se ve en la página: son datos para el navegador -->
+  <meta charset="UTF-8"> <!-- Permite tildes y la ñ -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que se vea bien en el móvil -->
+  <title>Elisabete Soares · Desarrollo web</title> <!-- Texto de la pestaña del navegador -->
+  <link rel="stylesheet" href="style.css"> <!-- Conecta este HTML con el archivo de estilos -->
+</head>
+
+<body>
+
+  <!-- ===== CABECERA: lo primero que se ve ===== -->
+  <header class="hero">
+    <p class="etiqueta">Estudiante de DAW · Palma de Mallorca</p>
+    <h1>Elisabete Soares</h1>
+    <p class="subtitulo">De diagnosticar motores a construir webs.</p>
+    <a class="boton" href="#contacto">Contactar</a> <!-- Este enlace baja hasta la sección "contacto" -->
+  </header>
+
+  <main>
+
+    <!-- ===== SOBRE MÍ ===== -->
+    <section>
+      <h2>Sobre mí</h2>
+      <p>
+        Durante más de 6 años he trabajado como mecánica naval y de automoción en Mallorca.
+        Mi trabajo consistía en encontrar el origen de una avería y resolverlo con método.
+      </p>
+      <p>
+        Ahora aplico esa misma forma de pensar a la programación: estoy estudiando el
+        Ciclo Superior de Desarrollo de Aplicaciones Web y busco una empresa tecnológica
+        donde aprender y crecer a largo plazo.
+      </p>
+    </section>
+
+    <!-- ===== MI CAMINO: una pequeña línea del tiempo ===== -->
+    <section>
+      <h2>Mi camino</h2>
+      <ul class="linea-tiempo"> <!-- ul = lista; cada li es un punto -->
+        <li>
+          <span class="fecha">2017 – 2019</span>
+          <p>Grado Medio en Electromecánica de Vehículos (IES Son Pacs)</p>
+        </li>
+        <li>
+          <span class="fecha">2018 – 2021</span>
+          <p>Mecánica de automoción: diagnosis electrónica con Launch, KTS, Berton y Texa</p>
+        </li>
+        <li>
+          <span class="fecha">2021 – 2025</span>
+          <p>Mecánica naval en empresas del sector náutico de Palma</p>
+        </li>
+        <li>
+          <span class="fecha">2026</span>
+          <p>Empiezo DAW. Primera web: esta que estás viendo 🙂</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ===== LO QUE ESTOY APRENDIENDO ===== -->
+    <section>
+      <h2>Lo que estoy aprendiendo</h2>
+      <div class="etiquetas"> <!-- Cada span es una "pastilla" de tecnología -->
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>Git y GitHub</span>
+        <span>SQL (nociones)</span>
+      </div>
+    </section>
+
+    <!-- ===== IDIOMAS ===== -->
+    <section>
+      <h2>Idiomas</h2>
+      <p>Portugués y español nativos · Catalán intermedio · Inglés intermedio</p>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <!-- id="contacto" es el destino del botón de la cabecera -->
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>
+        <a href="mailto:elisabete933@hotmail.com">elisabete933@hotmail.com</a><br>
+        <a href="https://www.linkedin.com/in/elisabet-soares-moreira" target="_blank">LinkedIn</a>
+        <!-- target="_blank" abre el enlace en una pestaña nueva -->
+      </p>
+    </section>
+
+  </main>
+
+  <!-- ===== PIE DE PÁGINA ===== -->
+  <footer>
+    <p>Hecho con HTML y CSS · 2026</p>
+  </footer>
+
+</body>
+</html>
