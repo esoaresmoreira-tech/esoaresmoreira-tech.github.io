@@ -6,7 +6,7 @@
 /* Variables: colores que se reutilizan. Cambia aquí y cambia en toda la web */
 :root {
   --color-fondo: #f7f5f2;      /* fondo general, blanco roto */
-  --color-texto: #1f2933;      /* texto principal, casi negro */
+  --color-texto: #15803d;      /* texto principal, casi negro */
   --color-suave: #5f6b76;      /* texto secundario, gris */
   --color-acento: #7c3aed;     /* azul mar: botones y detalles */
   --color-tarjeta: #ffffff;    /* fondo de las secciones */
